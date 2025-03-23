@@ -77,3 +77,58 @@ section {
 
 
 /* HEADER */
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 8.5rem;
+    border-radius: 100%;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 2.3rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+} 
+
+.header .icons div {
+    margin: 2rem;
+}
+
+.header .icons div ion-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.header .icons div ion-icon:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
